@@ -295,13 +295,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <p>Por favor, preencha o formulário pra criar uma conta.</p>
       <hr>
       <label for="email"><b>Email</b></label>
-      <input id="i1" type="text" placeholder="Enter Email" name="email" required>
+      <input  type="text" placeholder="Enter Email" name="email" required>
 
       <label for="psw"><b>Senha</b></label>
-      <input id="i2" type="password" placeholder="Enter Password" name="psw" required>
+      <input  type="password" placeholder="Enter Password" name="psw" required>
 
       <label for="psw-repeat"><b>Repita a Senha</b></label>
-      <input id="i3" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input  type="password" placeholder="Repeat Password" name="psw-repeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lembrar-me
@@ -311,7 +311,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-        <button type="submit" onclick="salvarForm() class="signupbtn">Cadastrar</button>
+        <button type="submit"  class="signupbtn">Cadastrar</button>
       </div>
     </div>
   </form>
@@ -519,29 +519,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <script>
-  function salvarForm () {
-
-if (typeof(Storage) !== "undefined") {
-
-if (localStorage.contagem) {
-  localStorage.contagem = Number(localStorage.contagem) + 1;
- 
-} else {
-  localStorage.contagem = 1;
-}
-
-
-nome= document.getElementById('i1').value;
-email=document.getElementById ('i2').value;
-email1=document.getElementById ('i3').value;
-
-dados = {nome, email, email1}
-
-string = JSON.stringify(dados)
-localStorage.setItem ("Dados", string);
-
-
-}}
+  
 
 var modal = document.getElementById('id02');
 

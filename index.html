@@ -366,7 +366,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Jeans</p>
     <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i id="demo" class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
     </p>
   </header>
@@ -405,7 +405,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxD21Eayd__RPA4ky0z2az2hguZfPjZQ3ZWCjnSgcsI13QV8Ey6fUp6Gu4Tj2rk8Rtg1LX9FXX&usqp=CAc" style="width:100%">
           <span class="w3-tag w3-display-topleft">Novo</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Compre Agora <i class="fa fa-shopping-cart"></i></button>
+            <button type="button"
+onclick="document.getElementById('demo').innerHTML = 1"> class="w3-button w3-black">Compre Agora <i class="fa fa-shopping-cart"></i></button>
           </div>
         </div>
         <p>Mega Ripped Jeans<br><b>R$19.99</b></p>
